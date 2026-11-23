@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Belajar Mandarin: HSK 1–4</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f0;--sf:#fff;--ink:#142329;--mu:#5b6b70;--ac:#1c7a62;--ac2:#dff0e9;--rd:#c4372c;--rd2:#fbe9e7;--ln:#d3ddd9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1d;--sf:#172428;--ink:#e6efec;--mu:#93a6a6;--ac:#2f9c7f;--ac2:#173a31;--rd:#ff8a7d;--rd2:#3c1f1c;--ln:#2a3b40}}
+:root[data-theme="dark"]{--bg:#0f1a1d;--sf:#172428;--ink:#e6efec;--mu:#93a6a6;--ac:#2f9c7f;--ac2:#173a31;--rd:#ff8a7d;--rd2:#3c1f1c;--ln:#2a3b40}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 'DM Sans',system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{margin:0;font-size:1.3rem}h2{margin:.2rem 0}h3{margin:0 0 .5rem}p{margin:.3rem 0}
+.mu,small{color:var(--mu)}
+header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.seal{background:var(--rd);color:#fff;width:38px;height:38px;border-radius:6px;display:grid;place-items:center;font-size:1.4rem}
+#nav,#lv{display:flex;gap:6px;overflow-x:auto;padding:2px 0 8px}
+button{font:inherit;color:inherit;cursor:pointer}
+.tb,.chip,.btn,.ic{border:1px solid var(--ln);background:var(--sf);border-radius:999px;padding:7px 14px;white-space:nowrap}
+.tb.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip{padding:3px 11px;font-size:.85rem}.chip.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.btn{border-radius:10px}.ic{border-radius:10px;padding:4px 9px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:16px;margin:10px 0}
+.zh{font-family:'Noto Serif SC','Songti SC','SimSun',serif}
+.hero{background:var(--ac);color:#fff;display:flex;gap:20px;align-items:center;border:0}
+.hero .mu{color:#ffffffc4}.hero .zh{font-size:5.5rem;line-height:1}.hero .btn{background:#fff;color:#14232b}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stats .card{text-align:center;margin:0}.stats b{font-size:1.7rem;display:block}
+.row{display:grid;grid-template-columns:60px 1fr 56px;gap:10px;align-items:center;margin:6px 0}
+.bar{height:8px;background:var(--ac2);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac)}
+.ok{background:var(--ac2)!important;border-color:var(--ac)!important}
+.bad{background:var(--rd2)!important;border-color:var(--rd)!important}
+.fo{color:var(--ac);font-weight:700}.fx{color:var(--rd);font-weight:700}
+.ctr{text-align:center}.big{font-size:4rem;line-height:1.2}.big2{font-size:2rem;font-weight:700}.big3{font-size:1.3rem}
+.fc{min-height:240px;display:grid;align-content:center;text-align:center;cursor:pointer}
+.acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.opts,.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.opt{padding:12px;text-align:center;width:100%}.two .btn{margin-bottom:8px}
+.sel{outline:3px solid var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.mode{text-align:left;display:block;margin:0}.mode b,.mode span{display:block}.mode span{color:var(--mu);font-size:.9rem}
+.inp{width:100%;font:inherit;padding:11px;border:1px solid var(--ln);border-radius:10px;background:var(--sf);color:var(--ink);margin:8px 0}
+.tray{min-height:56px;border:1px dashed var(--ln);border-radius:12px;padding:8px;margin:8px 0;display:flex;gap:6px;flex-wrap:wrap}
+.vr{display:grid;grid-template-columns:72px 1fr auto auto;gap:10px;align-items:center;padding:10px 14px;margin:6px 0}.vh{font-size:1.7rem}
+.py{color:var(--ac);font-weight:700;font-size:1.5rem;margin:.1rem 0}.chip.big3{border-radius:12px;padding:6px 12px;text-align:center;line-height:1.3}.chip.big3 small{font-family:'DM Sans',sans-serif;color:var(--mu)}
+main{padding-bottom:104px}.btn{box-shadow:0 3px 0 var(--ln)}
+#nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--sf);border-top:1px solid var(--ln);justify-content:space-around;gap:0;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+#nav .tb{border:0;border-radius:12px;font-size:.74rem;line-height:1.25;padding:6px 10px;background:none;box-shadow:none}
+#nav .tb.on{background:var(--ac2);color:var(--ac);font-weight:700}
+.btn.go{background:var(--ac);border-color:var(--ac);color:#fff;width:100%;padding:14px;font-weight:700;box-shadow:0 4px 0 #0f4f3f;margin-top:10px}
+.unit{background:var(--ac);color:#fff;border-radius:14px;padding:12px 16px;margin-top:16px}.unit h3{margin:0}.unit small{color:#ffffffcc}.u2{background:#2b6fb0}.u3{background:#8a4fb3}.u4{background:#b5532a}.u5{background:#3a4b52}
+.nodes{display:flex;flex-direction:column;align-items:center;gap:14px;margin:16px 0 8px}
+.node{width:88px;height:88px;border-radius:50%;border:0;background:var(--ac);color:#fff;box-shadow:0 6px 0 #0f4f3f;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.15}
+.node .zh{font-size:1.8rem}.node small{color:#ffffffd9;font-size:.72rem}
+.node.dn{background:#d99a14;box-shadow:0 6px 0 #8f6208}.node.lk{background:var(--ln);box-shadow:0 6px 0 var(--mu);color:var(--mu)}.node.lk small{color:var(--mu)}
+.lh{display:flex;gap:12px;align-items:center;margin-bottom:10px}.lh .bar{flex:1;height:12px}
+@media(max-width:520px){.hero{flex-direction:column;text-align:center}.opts{grid-template-columns:1fr}}
+</style></head>
+<body><main>
+<header><div class="seal zh">学</div><h1>Belajar Mandarin</h1></header>
+<nav id="nav" aria-label="Menu"></nav><div id="lv" aria-label="Filter level"></div><div id="app"></div>
+</main>
+<script>
+const W=`你好|nǐ hǎo|halo|1
+谢谢|xièxie|terima kasih|1
+再见|zàijiàn|sampai jumpa|1
+学生|xuésheng|pelajar|1
+老师|lǎoshī|guru|1
+朋友|péngyou|teman|1
+水|shuǐ|air|1
+吃|chī|makan|1
+喝|hē|minum|1
+喜欢|xǐhuan|suka|1
+学习|xuéxí|belajar|1
+电脑|diànnǎo|komputer|1
+今天|jīntiān|hari ini|1
+多少|duōshao|berapa banyak|1
+钱|qián|uang|1
+家|jiā|rumah|1
+书|shū|buku|1
+大|dà|besar|1
+小|xiǎo|kecil|1
+中国|Zhōngguó|China|1
+我|wǒ|saya|1
+你|nǐ|kamu|1
+他|tā|dia (laki-laki)|1
+我们|wǒmen|kami, kita|1
+是|shì|adalah|1
+不|bù|tidak|1
+有|yǒu|punya, ada|1
+在|zài|di, berada|1
+去|qù|pergi|1
+来|lái|datang|1
+看|kàn|melihat|1
+说|shuō|berbicara|1
+听|tīng|mendengar|1
+买|mǎi|membeli|1
+想|xiǎng|ingin, berpikir|1
+爱|ài|cinta|1
+人|rén|orang|1
+名字|míngzi|nama|1
+学校|xuéxiào|sekolah|1
+医生|yīshēng|dokter|1
+米饭|mǐfàn|nasi|1
+茶|chá|teh|1
+苹果|píngguǒ|apel|1
+天气|tiānqì|cuaca|1
+现在|xiànzài|sekarang|1
+明天|míngtiān|besok|1
+昨天|zuótiān|kemarin|1
+汉语|Hànyǔ|bahasa Mandarin|1
+漂亮|piàoliang|cantik|1
+高兴|gāoxìng|senang|1
+因为|yīnwèi|karena|2
+所以|suǒyǐ|oleh karena itu|2
+但是|dànshì|tetapi|2
+便宜|piányi|murah|2
+贵|guì|mahal|2
+作业|zuòyè|tugas|2
+考试|kǎoshì|ujian|2
+觉得|juéde|merasa|2
+一起|yìqǐ|bersama|2
+手机|shǒujī|ponsel|2
+旅游|lǚyóu|berwisata|2
+帮助|bāngzhù|membantu|2
+早上|zǎoshang|pagi hari|2
+晚上|wǎnshang|malam hari|2
+时间|shíjiān|waktu|2
+工作|gōngzuò|pekerjaan, bekerja|2
+身体|shēntǐ|badan, tubuh|2
+生病|shēngbìng|jatuh sakit|2
+医院|yīyuàn|rumah sakit|2
+公司|gōngsī|perusahaan|2
+东西|dōngxi|barang|2
+问题|wèntí|pertanyaan, masalah|2
+告诉|gàosu|memberi tahu|2
+知道|zhīdào|tahu|2
+非常|fēicháng|sangat|2
+欢迎|huānyíng|selamat datang|2
+开始|kāishǐ|mulai|2
+准备|zhǔnbèi|bersiap|2
+运动|yùndòng|olahraga|2
+游泳|yóuyǒng|berenang|2
+为什么|wèishénme|mengapa|2
+容易|róngyì|mudah|2
+难|nán|sulit|2
+快|kuài|cepat|2
+慢|màn|lambat|2
+近|jìn|dekat|2
+远|yuǎn|jauh|2
+已经|yǐjīng|sudah|3
+终于|zhōngyú|akhirnya|3
+突然|tūrán|tiba-tiba|3
+习惯|xíguàn|terbiasa|3
+需要|xūyào|membutuhkan|3
+担心|dānxīn|khawatir|3
+经验|jīngyàn|pengalaman|3
+影响|yǐngxiǎng|pengaruh|3
+或者|huòzhě|atau|3
+如果|rúguǒ|jika|3
+虽然|suīrán|meskipun|3
+简单|jiǎndān|sederhana|3
+复杂|fùzá|rumit|3
+重要|zhòngyào|penting|3
+努力|nǔlì|berusaha, rajin|3
+练习|liànxí|berlatih|3
+注意|zhùyì|memperhatikan|3
+比较|bǐjiào|relatif, membandingkan|3
+经常|jīngcháng|sering|3
+一直|yìzhí|terus-menerus|3
+参加|cānjiā|ikut serta|3
+同意|tóngyì|setuju|3
+小心|xiǎoxīn|hati-hati|3
+安全|ānquán|aman|3
+环境|huánjìng|lingkungan|3
+年轻|niánqīng|muda|3
+健康|jiànkāng|sehat|3
+课|kè|pelajaran, kelas|3
+申请|shēnqǐng|mendaftar|4
+奖学金|jiǎngxuéjīn|beasiswa|4
+竞争|jìngzhēng|persaingan|4
+机会|jīhuì|kesempatan|4
+成功|chénggōng|berhasil|4
+放弃|fàngqì|menyerah|4
+提高|tígāo|meningkatkan|4
+文化|wénhuà|budaya|4
+积极|jījí|aktif, positif|4
+解决|jiějué|menyelesaikan masalah|4
+压力|yālì|tekanan|4
+经济|jīngjì|ekonomi|4
+技术|jìshù|teknologi|4
+发展|fāzhǎn|perkembangan|4
+方法|fāngfǎ|metode, cara|4
+目标|mùbiāo|tujuan|4
+报名|bàomíng|mendaftar (kegiatan)|4
+材料|cáiliào|bahan, berkas|4
+毕业|bìyè|lulus|4
+专业|zhuānyè|jurusan|4
+水平|shuǐpíng|tingkat kemampuan|4
+讨论|tǎolùn|berdiskusi|4
+安排|ānpái|mengatur|4
+结果|jiéguǒ|hasil|4
+原因|yuányīn|penyebab|4
+获得|huòdé|memperoleh|4
+能力|nénglì|kemampuan|4
+计算机|jìsuànjī|komputer (formal)|5
+编程|biānchéng|pemrograman|5
+代码|dàimǎ|kode program|5
+算法|suànfǎ|algoritma|5
+数据|shùjù|data|5
+网络|wǎngluò|jaringan|5
+软件|ruǎnjiàn|perangkat lunak|5
+人工智能|réngōng zhìnéng|kecerdasan buatan|5
+数学|shùxué|matematika|5
+系统|xìtǒng|sistem|5
+数据库|shùjùkù|basis data|5
+机器学习|jīqì xuéxí|machine learning|5
+操作系统|cāozuò xìtǒng|sistem operasi|5
+服务器|fúwùqì|server|5
+屏幕|píngmù|layar|5
+键盘|jiànpán|papan ketik|5
+鼠标|shǔbiāo|mouse|5
+密码|mìmǎ|kata sandi|5
+文件|wénjiàn|file, dokumen|5
+下载|xiàzài|mengunduh|5
+搜索|sōusuǒ|mencari (search)|5`.split('\n').map(l=>{const[h,p,m,v]=l.split('|');return{h,p,m,v:+v}});
+const S=`我 喜欢 学习 汉语|Wǒ xǐhuan xuéxí Hànyǔ|Saya suka belajar bahasa Mandarin|1
+今天 我 吃 了 早饭|Jīntiān wǒ chī le zǎofàn|Hari ini saya sudah sarapan|2
+这个 电脑 很 便宜|Zhège diànnǎo hěn piányi|Komputer ini murah|2
+他 比 我 高|Tā bǐ wǒ gāo|Dia lebih tinggi dariku|2
+我 已经 学 了 三个月 汉语 了|Wǒ yǐjīng xué le sāngeyuè Hànyǔ le|Saya sudah belajar bahasa Mandarin tiga bulan|3
+我 对 计算机 很 感兴趣|Wǒ duì jìsuànjī hěn gǎnxìngqù|Saya sangat tertarik pada komputer|3
+请 把 门 关上|Qǐng bǎ mén guānshàng|Tolong tutup pintunya|3
+只要 努力 就 能 成功|Zhǐyào nǔlì jiù néng chénggōng|Asal berusaha pasti bisa berhasil|4
+我 打算 明年 申请 奖学金|Wǒ dǎsuàn míngnián shēnqǐng jiǎngxuéjīn|Saya berencana mendaftar beasiswa tahun depan|4
+即使 很 累 我 也 要 完成 作业|Jíshǐ hěn lèi wǒ yě yào wánchéng zuòyè|Sekalipun capek, saya tetap harus menyelesaikan tugas|4`.split('\n').map(l=>{const[t,p,m,v]=l.split('|');return{t,p,m,v:+v}});
+const P=`是 (adalah)|A 是 B|他是老师。|Tā shì lǎoshī.|Dia guru.
+吗 (pertanyaan ya/tidak)|Kalimat + 吗？|你喜欢中国菜吗？|Nǐ xǐhuan Zhōngguó cài ma?|Apakah kamu suka masakan China?
+了 (selesai)|Kata kerja + 了|我吃了早饭。|Wǒ chī le zǎofàn.|Saya sudah sarapan.
+过 (pernah)|Kata kerja + 过|我去过中国。|Wǒ qù guo Zhōngguó.|Saya pernah ke China.
+比 (lebih dari)|A 比 B + kata sifat|他比我高。|Tā bǐ wǒ gāo.|Dia lebih tinggi dariku.
+把 (mengolah objek)|S + 把 + objek + kata kerja + hasil|我把作业做完了。|Wǒ bǎ zuòyè zuò wán le.|Saya sudah menyelesaikan tugas.
+虽然…但是… (meskipun…tetapi…)|虽然 A，但是 B|虽然很累，但是我很高兴。|Suīrán hěn lèi, dànshì wǒ hěn gāoxìng.|Meskipun capek, saya senang.
+只要…就… (asal…pasti…)|只要 A，就 B|只要努力，就能成功。|Zhǐyào nǔlì, jiù néng chénggōng.|Asal berusaha, pasti berhasil.
+对…感兴趣 (tertarik pada…)|对 + hal + 感兴趣|我对计算机很感兴趣。|Wǒ duì jìsuànjī hěn gǎn xìngqù.|Saya sangat tertarik pada komputer.`.split('\n');
+const $=s=>document.querySelector(s),R=n=>Math.floor(Math.random()*n),sh=a=>[...a].sort(()=>Math.random()-.5),app=$('#app');
+const L={1:'HSK 1',2:'HSK 2',3:'HSK 3',4:'HSK 4',5:'Komputer'};
+const T=[['path','🧭<br>Belajar'],['drill','🎯<br>Latihan'],['cards','🃏<br>Kartu'],['vocab','📖<br>Kosakata'],['home','👤<br>Profil']];
+const D0={xp:0,streak:0,last:'',lv:[1,2],m:{},done:{}};
+let st=(()=>{try{return Object.assign({},D0,JSON.parse(localStorage.getItem('mdr')||'{}'))}catch(e){return{...D0}}})(),tab='path',cur=null;
+const sv=()=>{try{localStorage.setItem('mdr',JSON.stringify(st))}catch(e){}};
+const pool=()=>{const a=W.filter(w=>st.lv.includes(w.v));return a.length>=4?a:W};
+const say=t=>{try{const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}};
+const nt=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z]/g,'');
+function gain(n){const d=new Date(),t=d.toISOString().slice(0,10);d.setDate(d.getDate()-1);if(st.last!==t){st.streak=st.last===d.toISOString().slice(0,10)?st.streak+1:1;st.last=t}st.xp+=Math.round(n);sv()}
+function mk(w,ok){st.m[w.h]=Math.max(0,(st.m[w.h]||0)+(ok?1:-1));sv()}
+function go(t){tab=t;cur=null;draw()}
+function tg(k){const i=st.lv.indexOf(k);i>=0?st.lv.splice(i,1):st.lv.push(k);if(!st.lv.length)st.lv=[k];sv();cur=null;draw()}
+function draw(){
+$('#nav').innerHTML=T.map(([k,n])=>`<button class="tb ${k==tab?'on':''}" onclick="go('${k}')">${n}</button>`).join('');
+$('#lv').innerHTML=Object.keys(L).map(k=>`<button class="chip ${st.lv.includes(+k)?'on':''}" aria-pressed="${st.lv.includes(+k)}" onclick="tg(${k})">${L[k]}</button>`).join('');
+$('#lv').style.display=tab=='path'||(cur&&cur.k=='lesson')?'none':'';({path,home,cards,drill,vocab,pat})[tab]()}
+function home(){const d=W[Math.floor(Date.now()/864e5)%W.length],h=Object.keys(L).map(k=>{const a=W.filter(w=>w.v==k),n=a.filter(w=>(st.m[w.h]||0)>=3).length;return`<div class="row"><span>${L[k]}</span><div class="bar"><i style="width:${n/a.length*100}%"></i></div><small>${n}/${a.length}</small></div>`}).join('');
+app.innerHTML=`<section class="card hero"><div class="zh">${d.h}</div><div><p class="mu">Kata hari ini</p><h2>${d.p}</h2><p>${d.m}</p><button class="btn" onclick="say('${d.h}')">🔊 Dengar</button></div></section>
+<div class="stats"><div class="card"><b>${st.streak}</b><small>hari beruntun</small></div><div class="card"><b>${st.xp}</b><small>XP, ${rk(st.xp)}</small></div><div class="card"><b>${Object.values(st.m).filter(x=>x>=3).length}</b><small>kata hafal</small></div></div>
+<section class="card"><h3>Progres per level</h3>${h}<p class="mu">Kata dianggap hafal setelah dijawab benar 3 kali. Progres tersimpan di browser ini.</p></section>
+<button class="btn" onclick="go('pat')">Lihat pola kalimat</button>`}
+function cards(){if(!cur||cur.k!='c')cur={k:'c',q:sh(pool()).sort((a,b)=>(st.m[a.h]||0)-(st.m[b.h]||0)).slice(0,15),i:0,f:0};const c=cur;
+if(c.i>=c.q.length){app.innerHTML=`<section class="card ctr"><h2>Selesai</h2><p>${c.q.length} kartu sudah ditinjau.</p><button class="btn" onclick="cur=null;draw()">Ulangi</button></section>`;return}
+const w=c.q[c.i];app.innerHTML=`<p class="mu">Kartu ${c.i+1} dari ${c.q.length}</p><section class="card fc" onclick="cur.f=1;say('${w.h}');cards()"><div class="zh big">${w.h}</div><h2 class="py">${w.p}</h2>${c.f?`<p class="big2">${w.m}</p>`:'<p class="mu">Ketuk kartu untuk melihat arti</p>'}</section><div class="acts"><button class="btn" onclick="say('${w.h}')">🔊 Dengar</button>${c.f?`<button class="btn bad" onclick="nx(0)">✗ Ulangi</button><button class="btn ok" onclick="nx(1)">✓ Hafal</button>`:''}</div>`}
+function nx(ok){const c=cur,w=c.q[c.i];mk(w,ok);gain(ok?2:1);if(!ok)c.q.push(w);c.i++;c.f=0;cards()}
+function drill(){if(cur&&cur.run){cur.run();return}
+app.innerHTML=`<div class="grid">${[['quiz','Kuis pilihan ganda','Hanzi, pinyin, dan arti'],['match','Pasangkan','Cocokkan hanzi dengan pinyin atau arti'],['type','Ketik pinyin','Tulis pinyin dari hanzi'],['blitz','Blitz 60 detik','Jawab secepat mungkin dan kejar kombo'],['ear','Dengar dan pilih','Dengarkan, lalu pilih artinya'],['ord','Susun kalimat','Urutkan kata menjadi kalimat']].map(([k,a,b])=>`<button class="card mode" onclick="start('${k}')"><b>${a}</b><span>${b}</span></button>`).join('')}</div>`}
+const D=[['h','m','Apa arti kata ini?'],['m','h','Pilih hanzi untuk arti ini:'],['h','p','Pilih pinyin yang tepat:'],['p','m','Apa arti pinyin ini?']];
+const mq=()=>{const w=sh(pool())[0];return{w,d:D[R(4)],o:sh([w,...sh(pool().filter(x=>x!=w)).slice(0,3)])}},rk=x=>x<50?'Pemula':x<200?'Pelajar':x<500?'Mahir':'Suhu';
+function start(k){const f=S.filter(s=>st.lv.includes(s.v));cur={k,sc:0,i:0,r:0,cb:0,q:[],t:60,run:()=>({quiz:qz,ear:qz,blitz:qz,match:mt,type:ty,ord:od})[k]()};if(k=='blitz'){const c=cur,t=setInterval(()=>{if(cur!==c)return clearInterval(t);c.t--;const e=$('#tm');if(e)e.textContent='⏱ '+c.t+' dtk';if(c.t<=0){clearInterval(t);c.over=1;fin(c.sc,c.i)}},1000)}
+if(k=='quiz'||k=='ear')cur.q=sh(pool()).slice(0,10).map(w=>({w,d:k=='ear'?['h','m','Dengarkan, lalu pilih artinya:']:D[R(4)],o:sh([w,...sh(pool().filter(x=>x!=w)).slice(0,3)])}));
+if(k=='type')cur.q=sh(pool()).slice(0,8);
+if(k=='ord')cur.q=sh(f.length?f:S).slice(0,6);
+cur.run()}
+function fin(sc,n){if(cur&&cur.k=='lesson')return ld();gain(sc*3);app.innerHTML=`<section class="card ctr"><h2>${sc} dari ${n}</h2><p>${sc==n?'Sempurna!':sc>=n*.7?'Bagus, lanjutkan.':'Ulangi supaya makin hafal.'}</p><p class="mu">+${Math.round(sc*3)} XP</p><div class="acts"><button class="btn" onclick="start(cur.k)">Main lagi</button><button class="btn" onclick="cur=null;draw()">Menu latihan</button></div></section>`}
+function qz(){const c=cur;if(c.k=='lesson'&&c.h<1)return lf();if(c.k=='blitz'){if(c.over)return fin(c.sc,c.i);if(!c.q[c.i])c.q.push(mq())}if(c.i>=c.q.length)return fin(c.sc,c.q.length);const{w,d,o}=c.q[c.i];
+app.innerHTML=`${c.k=='blitz'?`<p class="mu"><span id="tm">⏱ ${c.t} dtk</span> 🔥 kombo x${c.cb}, skor ${c.sc}</p>`:c.k=='lesson'?hd(c):`<p class="mu">Soal ${c.i+1} dari ${c.q.length}</p>`}<section class="card ctr"><p>${d[2]}</p>${c.k=='ear'||d[3]?`<button class="btn" onclick="say('${w.h}')">🔊 Putar</button>`:`<div class="${d[0]=='h'?'zh big':'big2'}" onclick="say('${w.h}')">${w[d[0]]}</div>${d[0]=='h'&&d[1]!='p'?`<h2 class="py">${w.p}</h2>`:''}`}</section><div class="opts">${o.map((x,j)=>`<button class="btn opt ${d[1]=='h'?'zh':''}" onclick="ans(${j})">${d[1]=='h'?`<span class="big3">${x.h}</span><br><small>${x.p}</small>`:x[d[1]]}</button>`).join('')}</div><div id="fb"></div>`;if(c.k=='ear'||d[3]||d[0]=='h')say(w.h)}
+function ans(j){const c=cur,{w,d,o}=c.q[c.i],ok=o[j]==w;mk(w,ok);c.cb=ok?(c.cb||0)+1:0;if(ok){c.sc++;if(c.cb>2)gain(c.cb>5?2:1)}say(o[j].h);if(c.k=='lesson'&&!ok){c.h--;c.q.push(c.q[c.i])}
+document.querySelectorAll('.opt').forEach((b,x)=>{b.disabled=1;if(o[x]==w)b.classList.add('ok');else if(x==j)b.classList.add('bad')});
+$('#fb').innerHTML=`<p class="${ok?'fo':'fx'}">${ok?'✓ Benar'+(c.cb>2?' 🔥 kombo x'+c.cb:''):'✗ Kurang tepat'}</p><p class="mu"><span class="zh">${w.h}</span> ${w.p}: ${w.m}</p><button class="btn" onclick="cur.i++;cur.run()">Lanjut</button>`;if(c.k=='blitz'&&ok)setTimeout(()=>{if(cur===c&&!c.over){c.i++;c.run()}},700)}
+function mt(){const c=cur;if(c.r==3)return fin(c.sc,15);
+if(!c.a){c.a=sh(pool()).slice(0,5);c.t=R(2)?'p':'m';c.L=sh(c.a);c.Q=sh(c.a);c.d=[];c.s=null}
+const b=(w,s)=>`<button class="btn opt ${c.d.includes(w)?'ok':''} ${c.s==w&&s=='l'?'sel':''}" ${c.d.includes(w)?'disabled':''} onclick="pk('${s}',${c.a.indexOf(w)})">${s=='l'?`<span class="zh big3">${w.h}</span>${c.t=='m'?`<br><small>${w.p}</small>`:''}`:w[c.t]}</button>`;
+app.innerHTML=`<p class="mu">Ronde ${c.r+1} dari 3</p><p>Cocokkan hanzi dengan ${c.t=='p'?'pinyin':'arti'}nya: ketuk hanzi, lalu pasangannya.</p><div class="two"><div>${c.L.map(w=>b(w,'l')).join('')}</div><div>${c.Q.map(w=>b(w,'r')).join('')}</div></div><div id="fb"></div>`}
+function pk(s,i){const c=cur,w=c.a[i];say(w.h);if(s=='l'){c.s=w;mt();return}if(!c.s)return;const ok=c.s==w;
+if(ok){c.d.push(w);c.sc++;mk(w,1)}else mk(c.s,0);c.s=null;if(c.d.length==5){c.r++;c.a=0}mt();if(!ok&&c.a)$('#fb').innerHTML='<p class="fx">✗ Belum cocok, coba lagi</p>'}
+function ty(){const c=cur;if(c.i>=c.q.length)return fin(c.sc,c.q.length);const w=c.q[c.i];c.chk=0;
+app.innerHTML=`<p class="mu">Soal ${c.i+1} dari ${c.q.length}</p><section class="card ctr"><div class="zh big">${w.h}</div><p>${w.m}</p><button class="btn" onclick="say('${w.h}')">🔊 Dengar</button></section><input id="inp" class="inp" placeholder="Ketik pinyin (nada boleh dilewati)" autocomplete="off" autocapitalize="off" aria-label="Jawaban pinyin"><div class="acts"><button class="btn" onclick="ck()">Periksa</button><button class="btn" onclick="$('#fb').innerHTML='<p class=mu>Petunjuk: huruf pertama '+nt(cur.q[cur.i].p)[0]+', jumlah huruf '+nt(cur.q[cur.i].p).length+'</p>'">💡 Petunjuk</button></div><div id="fb"></div>`;
+$('#inp').onkeydown=e=>{if(e.key=='Enter')ck()};$('#inp').focus();say(w.h)}
+function ck(){const c=cur;if(c.chk)return;c.chk=1;const w=c.q[c.i],v=$('#inp').value.replace(/v/gi,'ü'),z=s=>s.replace(/\s/g,'').toLowerCase(),ex=z(v)==z(w.p),ok=ex||nt(v)==nt(w.p);
+mk(w,ok);if(ok)c.sc+=ex?1:.5;$('#inp').disabled=1;
+$('#fb').innerHTML=`<p class="${ok?'fo':'fx'}">${ex?'✓ Sempurna':ok?'✓ Hampir benar, nada belum tepat':'✗ Belum tepat'}</p><p>Jawaban: <b>${w.p}</b></p><button class="btn" onclick="cur.i++;cur.run()">Lanjut</button>`}
+function od(){const c=cur;if(c.i>=c.q.length)return fin(c.sc,c.q.length);const s=c.q[c.i];
+if(!c.w){const py=s.p.split(' ');c.w=sh(s.t.split(' ').map((x,i)=>({x,i,p:py[i]||''})));c.a=[];c.chk=0}
+const ch=(o,k)=>`<button class="chip big3 zh" onclick="mv('${k}',${o.i})">${o.x}<br><small>${o.p}</small></button>`;
+app.innerHTML=`<p class="mu">Soal ${c.i+1} dari ${c.q.length}</p><section class="card ctr"><p>${s.m}</p></section><div class="tray">${c.a.map(o=>ch(o,'a')).join('')||'<span class="mu">Ketuk kata di bawah untuk menyusun</span>'}</div><div class="tray">${c.w.map(o=>ch(o,'w')).join('')}</div><button class="btn" onclick="cko()">Periksa</button><div id="fb"></div>`}
+function mv(k,i){const c=cur;if(c.chk)return;say([...c.w,...c.a].find(o=>o.i==i).x);const f=k=='w'?c.w:c.a,t=k=='w'?c.a:c.w;t.push(...f.splice(f.findIndex(o=>o.i==i),1));od()}
+function cko(){const c=cur;if(c.chk)return;const s=c.q[c.i],ok=c.a.map(o=>o.x).join(' ')==s.t;if(!c.a.length)return;c.chk=1;if(ok)c.sc++;gain(ok?1:0);
+$('#fb').innerHTML=`<p class="${ok?'fo':'fx'}">${ok?'✓ Benar':'✗ Urutan yang benar:'}</p><p class="zh big3">${s.t.replace(/ /g,'')}</p><p class="mu">${s.p}</p><div class="acts"><button class="btn" onclick="say('${s.t.replace(/ /g,'')}')">🔊 Dengar</button><button class="btn" onclick="cur.i++;cur.w=0;cur.run()">Lanjut</button></div>`}
+function vocab(){app.innerHTML=`<input id="q" class="inp" placeholder="Cari hanzi, pinyin, atau arti" oninput="vl()" aria-label="Cari kosakata"><div id="vl"></div>`;vl()}
+function vl(){const q=$('#q').value.toLowerCase();$('#vl').innerHTML=W.filter(w=>st.lv.includes(w.v)&&(w.h+w.p+nt(w.p)+w.m).toLowerCase().includes(q)).map(w=>`<div class="card vr"><span class="zh vh">${w.h}</span><div><b>${w.p}</b><br><span class="mu">${w.m}</span></div><small>${L[w.v]}</small><button class="ic" onclick="say('${w.h}')" aria-label="Dengar ${w.h}">🔊</button></div>`).join('')||'<p class="mu">Tidak ada kata yang cocok. Coba aktifkan level lain di atas.</p>'}
+function pat(){app.innerHTML=P.map(p=>{const[a,b,h,y,m]=p.split('|');return`<div class="card"><h3>${a}</h3><p class="mu">${b}</p><p class="zh big3">${h} <button class="ic" onclick="say('${h}')" aria-label="Dengar">🔊</button></p><p><b>${y}</b></p><p>${m}</p></div>`}).join('')}
+const LS=[];[1,2,3,4,5].forEach(v=>{const a=W.filter(w=>w.v==v);for(let i=0;i<a.length;i+=5)LS.push({v,w:a.slice(i,i+5)})});
+const hd=c=>`<div class="lh"><div class="bar"><i style="width:${c.i/c.q.length*100}%"></i></div><b>❤️ ${c.h}</b></div>`;
+function path(){const n=LS.findIndex((_,i)=>!st.done[i]),nx=n<0?LS.length:n;
+app.innerHTML=`<div class="card"><b>🔥 ${st.streak}</b> hari beruntun, <b>⭐ ${st.xp}</b> XP</div>`+[1,2,3,4,5].map(v=>`<section class="unit u${v}"><h3>${v==5?'Unit Komputer':'Unit HSK '+v}</h3><small>${LS.filter(l=>l.v==v).length} pelajaran, 5 kata per pelajaran</small></section><div class="nodes">${LS.map((l,i)=>[l,i]).filter(([l])=>l.v==v).map(([l,i],j)=>{const d=st.done[i],k=i>nx;return`<button class="node ${d?'dn':k?'lk':''}" ${k?'disabled':''} style="margin-left:${[0,50,76,50,0,-50,-76,-50][j%8]}px" onclick="lesson(${i})"><span class="zh">${l.w[0].h}</span><small>${d?'⭐'.repeat(d):k?'🔒':l.w[0].p}</small></button>`}).join('')}</div>`).join('')}
+function lesson(i){const l=LS[i],q=[],m2=(w,d)=>({w,d,o:sh([w,...sh(W.filter(x=>x!=w)).slice(0,3)])});
+l.w.forEach(w=>q.push({t:'L',w}));sh(l.w).forEach(w=>q.push(m2(w,['h','m','Dengarkan, lalu pilih artinya:',1])));sh(l.w).forEach(w=>q.push(m2(w,D[R(4)])));
+cur={k:'lesson',li:i,q,i:0,sc:0,h:3,cb:0,run:()=>{const s=cur.q[cur.i];s&&s.t=='L'?lr(s):qz()}};tab='drill';draw()}
+function lr(s){const c=cur,w=s.w;app.innerHTML=`${hd(c)}<section class="card ctr"><p class="mu">Kata baru, ketuk untuk mendengar</p><div class="zh big" onclick="say('${w.h}')">${w.h}</div><h2 class="py">${w.p}</h2><p class="big2">${w.m}</p><button class="btn" onclick="say('${w.h}')">🔊 Dengar lagi</button></section><button class="btn go" onclick="cur.i++;cur.run()">Lanjut</button>`;say(w.h)}
+function ld(){const c=cur,s=Math.max(1,c.h);st.done[c.li]=Math.max(st.done[c.li]||0,s);gain(10+s*3);app.innerHTML=`<section class="card ctr"><div class="big">🎉</div><h2>Pelajaran selesai!</h2><p>${'⭐'.repeat(s)}</p><p class="mu">+${10+s*3} XP</p><button class="btn go" onclick="go('path')">Lanjut belajar</button><button class="btn" onclick="lesson(${c.li})">Ulangi pelajaran</button></section>`}
+function lf(){app.innerHTML=`<section class="card ctr"><div class="big">💔</div><h2>Nyawa habis</h2><p>Tenang, ulangi pelajarannya supaya makin hafal.</p><button class="btn go" onclick="lesson(${cur.li})">Coba lagi</button><button class="btn" onclick="go('path')">Kembali</button></section>`}
+draw();
+</script></body></html>
