@@ -931,7 +931,12 @@ const L={1:'HSK 1',2:'HSK 2',3:'HSK 3',4:'HSK 4',5:'Komputer'};
 const T=[['path','Belajar'],['drill','Latihan'],['talk','Dialog'],['gram','Tata bahasa'],['vocab','Kamus'],['home','Profil']];
 const D0={xp:0,streak:0,last:'',lv:[1,2],m:{},done:{},n:10,ul:1,fav:{},th:'',sp:.8,td:{d:'',x:0},guest:0,lang:'id',xpgoal:30};
 let st=(()=>{try{return Object.assign({},D0,JSON.parse(localStorage.getItem('mdr')||'{}'))}catch(e){return{...D0}}})(),tab='path',cur=null,gv='',vkLv=0;
-const sv=()=>{clearTimeout(sv.t);sv.t=setTimeout(pst,200)};
+const sv=()=>{
+  clearTimeout(sv.t);
+  sv.t=setTimeout(()=>{
+    pst().catch(e=>console.error('Gagal menyimpan progres:',e));
+  },200);
+};
 const pool=()=>{const a=W.filter(w=>st.lv.includes(w.v));return a.length>=4?a:W};
 
 /* Suara SpeechSynthesis cerdas (mengutamakan suara Mandarin asli) */
@@ -2137,7 +2142,7 @@ function enter(){
 function lo(){pst().finally(()=>location.reload())}
 function boot(){
   // Buka aplikasi langsung agar tidak pernah menampilkan layar kosong
-  enter();
+  av('login');
 }
 
 /* MODAL IN-APP: GANTI PASSWORD DARI TAB PROFIL */
