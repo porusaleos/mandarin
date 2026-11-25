@@ -2248,7 +2248,7 @@ function trEl(el){if(el.nodeType==3){const v=el.nodeValue,c=v.trim();if(!c)retur
 if(el.nodeType!=1||/^(SCRIPT|STYLE)$/.test(el.tagName))return;
 AT.forEach(a=>{if(!el.hasAttribute(a))return;const k='_o'+a;if(st.lang=='en'){if(el[k]===undefined){const r=trs(el.getAttribute(a).trim());if(r){el[k]=el.getAttribute(a);el.setAttribute(a,r)}}}else if(el[k]!==undefined){el.setAttribute(a,el[k]);delete el[k]}});
 el.childNodes.forEach(trEl)}
-function applyLang(){const en=st.lang=='en';document.documentElement.lang=en?'en':'id';trEl(document.body);document.title=en?'Learn Mandarin: HSK 1–4':'Belajar Mandarin: HSK 1–4'}
+function applyLang(){const en=st.lang=='en';document.documentElement.lang=en?'en':'id';trEl(document.body);document.title=en?'Learn Mandarin: HSK 1–4':'Wǒ Hànyǔ'}
 function setLang(v){st.lang=v;sv();applyLang();cur=null;draw();applyLang()}
 new MutationObserver(m=>{m.forEach(x=>{x.addedNodes.forEach(trEl);if(x.type=='characterData'&&st.lang=='en')trEl(x.target)})}).observe(document.body,{childList:true,subtree:true,characterData:true});
 applyLang();
